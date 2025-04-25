@@ -1,10 +1,6 @@
-Sure! Here's a README template you can use for your project:
+# Waifu GAN
 
----
-
-# Waifu Generator
-
-This project allows you to generate random waifu images using a GAN (Generative Adversarial Network). You can run the generator in a standard mode or with an enhanced version that uses a Discriminator to verify the generated images before serving them to the user.
+This project allows you to generate random waifu images using a DCGAN Architecture. You can run the generator in a standard mode or with an enhanced version that uses a Discriminator to verify the generated images before serving them to the user.
 
 ## Prerequisites
 
@@ -19,16 +15,6 @@ Before running the code, make sure you install all the required dependencies:
 
 ```bash
 pip install -r requirements.txt
-```
-
-### Example `requirements.txt`:
-
-```
-torch
-torchvision
-flask
-requests
-PILLOW
 ```
 
 ## Setup
@@ -81,32 +67,23 @@ After running either of the scripts, the web UI will be accessible at `http://lo
 - **Generate Random Waifu Images**: Each time you refresh the page, a new random waifu image will be displayed.
 - **View the Generated Image**: The image will be shown on the page, and you can refresh to generate a new one.
 
-## Output and Image Storage
-
-Generated images are saved to the `static/images/` folder, and the web UI displays them directly from there. Ensure that the directory exists or the script will create it when running.
-
-1. **Generated Images Location**: 
-   - The generated images will be saved to `static/images/` after each generation.
-   - You can view them on the web page or manually check the directory.
-
-2. **Access the Images**: 
-   - The images are accessible via the web UI and stored in `static/images/`.
-
 ### Example Image Generation
 
 After running the app, the URL for the generated image might look like:
-
-```
-http://localhost:5000/generate?rand=81629
-```
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/0d8bc53f-4538-4004-9089-950fc4515c02" width="200" height="200" />
+  <img src="https://github.com/user-attachments/assets/7e75f331-3625-4c95-86af-3adaea963b32" width="200"  height="200"/>
+  <img src="https://github.com/user-attachments/assets/75bf97a9-e59f-49e7-a607-33282926f781" width="200"  height="200"/>
+</p>
 
 This image will be shown on the web page.
+![image](https://github.com/user-attachments/assets/aa7c3989-d111-44ac-bf05-0de79139e6f2)
 
 ## Kaggle Notebook Reference
 
 For reference on how to train the GAN model used in this project, you can check the Kaggle notebook:
 
-[Kaggle GAN Training Notebook](https://www.kaggle.com/example-github-username/waifu-gan-training)
+[Kaggle GAN Training Notebook](https://www.kaggle.com/code/prajaspw/anime-gan)
 
 This notebook covers the training process, the architecture used for both the generator and discriminator, and how to save the trained models.
 
